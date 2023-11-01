@@ -1,0 +1,16 @@
+.calculator-body {
+    padding-top: 100px;
+    width: 400px;
+}
+
+.col {
+    font-size: 22px;
+}
+
+.ac-button{
+    background-color: rgb(255, 190, 70);
+}
+
+#display {
+     font-size: 18px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="survey-form">
+            <h1>Survey Form</h1>
+
+            <div class="form-group">
+                <label for="first-name" class="label-text">First Name: </label><br>
+                <input type="text" name="first-name" id="first-name" class="box box-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name" class="label-text">Last Name: </label><br>
+                <input type="text" name="last-name" id="last-name" class="box box-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth" class="label-text">Date of Birth: </label><br>
+                <input type="date" name="date-of-birth" id="date-of-birth" class="box box-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country" class="label-text">Country: </label><br>
+                <select name="country" id="country" class="box box-select">
+                    <option value="" disabled selected></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="label-text">Gender: </label><br>
+                <input type="radio" name="gender" id="male" value="Male" required>
+                <label for="male" class="radio-text">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female" class="radio-text">Female</label>
+                <input type="radio" name="gender" id="others" value="others">
+                <label for="other" class="radio-text">Others</label>
+            </div>
+
+            <div class="form-group">
+                <label for="profession" class="label-text">Profession: </label><br>
+                <input type="text" name="profession" id="profession" class="box box-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="label-text">Email: </label><br>
+                <input type="email" name="email" id="email" class="box box-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile" class="label-text">Mobile Number: </label><br>
+                <input type="tel" name="mobile" id="mobile" class="box box-input" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+                <button type="reset" class="btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
